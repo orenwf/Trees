@@ -1,6 +1,6 @@
 package trees;
+import graphs.Node;
 
-@SuppressWarnings("rawtypes")
 public class KeyNotFoundException extends Exception {
 	
 	/**
@@ -8,9 +8,9 @@ public class KeyNotFoundException extends Exception {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	public RBTree prev;
+	public Node prev;
 
-	public KeyNotFoundException(RBTree p, String arg) { 
+	public KeyNotFoundException(Node p, String arg) { 
 		super(arg);
 		prev = p;
 	}
